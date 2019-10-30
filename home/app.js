@@ -7,14 +7,14 @@ class App extends Component {
 
     onRender(dom) {
         const props = {
-            cats: cats
+            images: images
         };
 
-        const catList = new CatList(props);
-        const catListDOM = catList.renderDOM();
+        const imageList = new ImageList(props);
+        const imageListDOM = imageList.renderDOM();
 
         const listSection = dom.querySelector('.list-section');
-        listSection.appendChild(catListDOM);
+        listSection.appendChild(imageListDOM);
     }
 
     renderHTML() {
