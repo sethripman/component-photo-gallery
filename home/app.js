@@ -7,10 +7,7 @@ import images from '../data/images.js';
 class App extends Component {
 
     onRender(dom) {
-        const header = new Header({
-            person: 'Little Piglet',
-            sayHello: (name) => { console.log(`Hello, ${name}`); }
-        });
+        const header = new Header();
         const headerDOM = header.renderDOM();
         dom.prepend(headerDOM);
 
