@@ -1,4 +1,5 @@
 import Component from '../Component.js';
+import ImageItem from './ImageItem.js';
 
 class ImageList extends Component {
 
