@@ -1,6 +1,6 @@
 import Component from '../Component.js';
 import Header from './Header.js';
-import ImageList from './CatList.js';
+import ImageList from './ImageList.js';
 import FilterImages from './FilterImages.js';
 import images from '../data/images.js';
 
@@ -38,7 +38,7 @@ class App extends Component {
                     });
                 }
 
-                const updateProps = { cats: filteredImages };
+                const updateProps = { images: filteredImages };
                 imageList.update(updateProps);
             }
         });
@@ -57,11 +57,11 @@ class App extends Component {
         
                 <main>
                     <section class="options-section">
-                        <!-- FilterCats goes here -->
+                        <!-- Filter Images goes here -->
                     </section>
 
                     <section class="list-section">
-                        <!-- CatList goes here -->
+                        <!-- ImageList goes here -->
                     </section>
                 </main>
             </div>

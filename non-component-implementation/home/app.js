@@ -37,7 +37,7 @@ hornsFilter.addEventListener('change', () => {
     render(filteredHorns);
 });
 
-// kick off initial render on load with all cats
+// kick off initial render on load with all images
 render(images);
 
 // put render functionality into function as
