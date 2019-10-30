@@ -13,9 +13,9 @@ class ImageList extends Component {
 
         images.forEach(image => {
             const props = { image: image };
-            /*const imageItem = new ImageItem(props);
+            const imageItem = new ImageItem(props);
             const imageItemDOM = imageItem.renderDOM();
-            dom.appendChild(imageItemDOM);*/
+            dom.appendChild(imageItemDOM);
         });
     }
 }
