@@ -11,31 +11,23 @@ class FilterImages extends Component {
     }
     
     renderHTML() {
-        const images = this.props.images;
-        // Using spread operator to take the individual keywords out of a set of unique keywords
-        const uniqueKeywords = [...new Set(images.map(image => image.keyword))];
-
-        const lines = "";
-        uniqueKeywords.forEach((keyword) => {
-            const option = document.createElement("option")
-            option.value = keyword;
-            option.text = keyword.charAt(0).toUpperCase() + keyword.substring(1);
-            lines += option + ;
-        });
-
-        <option value="keyword">Keyword</option>
-        
-        let returnHTML = /*html*/`
-        <select class="corn-type-filter">
-            <option value="" selected>All Varieties</option>
-            ${`
-                <option></option>${dynamically generated line}`}
-
-        </select>
+        return /*html*/`
+            <select class="corn-type-filter">
+                <option value="" selected>All Varieties</option>
+                <option value="dragon">Dragon</option>
+                <option value="lizard">Lizard</option>
+                <option value="chameleon">Chameleon</option>
+                <option value="mouflon">Mouflon</option>
+                <option value="addax">Addax</option>
+                <option value="markhor">Markhor</option>
+                <option value="unicorn">Unicorn</option>
+                <option value="rhino">Rhino</option>
+                <option value="narwhal">Narwhal</option>
+                <option value="triceratops">Triceratops</option>
+                <option value="unilego">Unilego</option>
+            </select>
         `;
-            
-        return returnHTML;
     }
 }
-    
+
 export default FilterImages;
